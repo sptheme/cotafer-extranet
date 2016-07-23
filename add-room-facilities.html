@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Room facilities - Cotafer extranet</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendors/html5shiv.min.js"></script>
+      <script src="js/vendors/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="has-sidebar left-sidebar">
+	<div id="page" class="site">
+		<div id="wrap">
+
+			<header id="header" class="site-header">
+				<div id="site-header-inner" class="container-fluid">
+					<div id="logo" class="site-branding pull-left">
+						<a href="register.html" title="Cotafer"><img src="images/logo.png" alt="Cotafer"></a>
+					</div> <!-- /logo -->
+					<div id="header-setting" class="pull-right">
+						<div class="language">
+							<form id="langSelector" action="" class="form-horizontal">
+								<div class="form-group">
+								<label for="lang">Language:</label>
+							    <select name="lang" id="lang">
+							    	<option value="en" selected="selected">English (US)</option>
+							        <option value="ca">Català</option>
+							        <option value="cs">Čeština</option>
+							        <option value="da">Dansk</option>
+							        <option value="de">Deutsch</option>
+							        <option value="el">Ελληνικά</option>
+							        <option value="es">Español</option>
+							        <option value="et">Eesti</option>
+							        <option value="fi">Suomi</option>
+							        <option value="fr">Français</option>
+							        <option value="he">עברית</option>
+							        <option value="hr">Hrvatski</option>
+							        <option value="hu">Magyar</option>
+							        <option value="id">Bahasa Indonesia</option>
+							        <option value="is">Íslenska</option>
+							        <option value="it">Italiano</option>
+							        <option value="ja">日本語</option>
+							        <option value="ko">한국어</option>
+							        <option value="lt">Lietuvių</option>
+							        <option value="lv">Latviski</option>
+							        <option value="ms">Bahasa Malaysia</option>
+							        <option value="nl">Nederlands</option>
+							        <option value="no">Norsk</option>
+							        <option value="pl">Polski</option>
+							        <option value="xb">Português (BR)</option>
+							        <option value="pt">Português</option>
+							        <option value="ro">Română</option>
+							        <option value="ru">Русский</option>
+							        <option value="sk">Slovenčina</option>
+							        <option value="sl">Slovenščina</option>
+							        <option value="sr">Srpski</option>
+							        <option value="sv">Svenska</option>
+							        <option value="th">ภาษาไทย</option>
+							        <option value="tl">Filipino</option>
+							        <option value="tr">Türkçe</option>
+							        <option value="uk">Українська</option>
+							        <option value="vi">Tiếng Việt</option>
+							        <option value="zh">简体中文</option>
+							        <option value="xt">繁體中文</option>
+							    </select>
+							    </div>
+							</form>
+						</div> <!-- /language -->
+					</div>
+				</div> <!-- /site-header-inner -->
+			</header><!-- /header -->
+
+			<div id="content" class="site-content">
+
+				<div id="content-wrap" class="container">
+					<div id="primary" class="content-area">
+						<main id="main" class="site-main" role="main">
+							<div class="register-properties">
+								<form class="add-room-facilities" action="add-property-photos.html">
+													
+							        <!-- Room facility -->
+									<fieldset>
+										<legend>Extra bed options</legend>
+										<div class="fieldset-desc">
+											<p>These are the options for beds that can be added upon request.</p>
+										</div>
+										
+										<div class="form-group">
+											<label>Can you provide extra beds?</label>
+											<div id="extra-bed-option" class="radio-block">
+												<div class="radio">
+													<label>
+														<input type="radio" name="extra_beds_available" value="yes" checked="">
+														<span>Yes</span>
+													</label>
+													<div class="radio">
+														<label>
+															<input type="radio" name="extra_beds_available" value="no">
+															<span>No</span>
+														</label>
+													</div>
+											    </div>
+										    </div><!-- /radio-block -->
+										</div>    
+
+									    <div class="form-group">
+											<label for="max-extra-beds">Select the number of extra beds that can be added:</label>
+											<div class="row">
+												<div class="col-xs-12 col-sm-4">
+												<select id="max-extra-beds" name="max_extra_beds" class="form-control">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+												</div>
+											</div> <!-- /row -->
+										</div>
+
+										<div class="extra-bed-guest-allowed">
+											<p><strong>Check the box(es) if you can accommodate the following guests in extra beds.</strong></p>
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="babies_allowed"> Children up to 2 years old</label>
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">price per night, per child - $</div>
+														<input type="text" class="form-control" id="babies-price" name="babies_price" placeholder="Amount">
+													</div>
+												</div>
+											</div> <!-- /row -->
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="children_allowed"> Children between 6 to 16 years old</label>
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">price per night, per child - $</div>
+														<input type="text" class="form-control" id="children-price" name="children_price" placeholder="Amount">
+													</div>
+												</div>
+											</div> <!-- /row -->
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="adults_allowed"> Adults</label>
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">price per night, per Adult - $</div>
+														<input type="text" class="form-control" id="adults-price" name="adults_price" placeholder="Amount">
+													</div>
+												</div>
+											</div> <!-- /row -->	
+										</div> <!-- /extra-bed-guest-allowed -->
+										
+									</fieldset>
+
+									<fieldset>
+										<legend>Room amenities</legend>
+										<div class="form-group">
+											<div class="row">
+												<ul class="col-md-6">
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Air conditioning</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Fan</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+														<label><input type="checkbox"> Balcony</label>
+										            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> IDD Telephone</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Data port for fax/modem</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Mini bar/refrigerator</label>
+											            </div>
+													</li>
+												</ul>
+												<ul class="col-md-6">
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Tea/Coffee maker</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Safety box</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Alarm System</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Cable TV, satellite channels</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Mosquito net</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Mosquito cream</label>
+											            </div>
+													</li>
+												</ul>
+											</div> <!-- /row -->
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend>Bathroom</legend>
+										<div class="form-group">
+											<div class="row">
+												<ul class="col-md-6">
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Bath robe</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Shower</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+														<label><input type="checkbox"> Bathtub</label>
+										            </div>
+													</li>
+												</ul>
+												<ul class="col-md-6">
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Hot Water</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Hairdryer</label>
+											            </div>
+													</li>
+													<li>
+														<div class="checkbox">
+															<label><input type="checkbox"> Shaver outlet</label>
+											            </div>
+													</li>
+												</ul>
+											</div> <!-- /row -->
+										</div>
+									</fieldset>
+
+									<input type="submit" id="proceed" name="proceed" value="Continue" class="btn btn-primary btn-block save-and-proceed">
+								</form> <!-- /add-room-facilities -->
+							</div> <!-- /register-properties -->
+						</main>	
+					</div> <!-- /content-area -->
+
+					<aside id="sidebar" class="widget-area">
+						<div class="menunav">
+							<ul class="nav nav-pills nav-stacked">
+								<li role="presentation"><a href="add-general-information.html">General information</a></li>
+								<li role="presentation"><a href="add-property-detail.html">Property detail</a></li>
+								<li role="presentation"><a href="add-room-detail.html">Room detail</a></li>
+								<li role="presentation" class="active"><a href="add-room-facilities.html">Room facilities</a></li>
+								<li role="presentation"><a href="add-property-photos.html">Property photos</a></li>
+								<li role="presentation"><a href="set-payment-poclicies.html">Payment and policies</a></li>
+								<li role="presentation"><a href="set-agreement.html">Agreement</a></li>
+								<li role="presentation"><a href="preview-property.html">Submit for review</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div> <!-- /container -->
+	    	</div> <!-- /content -->
+
+	    	<footer id="colophon" class="site-footer" role="contentinfo">
+	    		<div class="container-fluid">
+	    			<div class="copyright pull-left">Copyright 2016 <a href="#">Cotafer.</a> - All Rights Reserved.</div>
+	    			<div class="footer-nav pull-right">
+	    				<ul>
+	    					<li><a href="#">Home</a></li>
+	    					<li><a href="#">About us</a></li>
+	    					<li><a href="#">FAQs</a></li>
+	    					<li><a href="#">Contact us</a></li>
+	    				</ul>
+	    			</div> 
+	    		</div> <!-- /container-fluid -->
+	    	</footer> <!-- /site-footer -->
+
+	    </div> <!-- /wrap -->
+    </div> <!-- /page -->
+
+    <script src="js/vendors/jquery-2.2.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendors/bootstrap.min.js"></script>
+
+</body>
+</html>

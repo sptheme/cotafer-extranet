@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>General Information - Cotafer extranet</title>
+	<title>Room detail - Cotafer extranet</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -84,106 +84,46 @@
 					<div id="primary" class="content-area">
 						<main id="main" class="site-main" role="main">
 							<div class="register-properties">
-								<form class="add-general-information" action="add-property-detail.html">
+								<form class="add-room-detail" action="add-room-facilities.html">
 													
-							        <!-- General Information -->
-									<fieldset id="basic-info">
-										<legend>Basic information</legend>
+							        <!-- Room Type -->
+									<fieldset id="room-type">
+										<legend>Room type</legend>
+										<div class="fieldset-desc">
+											<p>You can edit and add more room types once your registration is completed.</p>
+										</div>
 										<div class="form-group">
-											<label for="property-name">Property name:</label>
-											<input type="text" id="property-name" class="form-control" name="property_name" value="Mekong River Hotel">
+											<label for="room-name">Room name:</label>
+											<input type="text" id="room-name" class="form-control" name="room_name" value="">
 										</div>
 										<div class="row">
-											<div class="form-group col-xs-12 col-sm-4">
-												<label for="accommodation-type">Accommodation type:</label>
-												<select id="accommodation-type" name="accommodation_type" class="form-control">
-													<option value="">Please select</option>
-													<option value="1">Hotel</option>
-													<option value="2">Home Stay</option>
-												</select>
+											<div class="form-group col-sm-6">
+												<label for="num-bed">Max occupancy with exitting bed:</label>
+												<input type="text" id="num-bed" class="form-control" name="num_bed" value="">
 											</div>
-											<div class="form-group col-xs-12 col-sm-4">
-												<label for="starts">Star rating:</label>
-												<select id="starts" name="starts" class="form-control">
-													<option value="0">N/A</option>
-													 <option value="1" >1&nbsp;&#x272F;</option>
-													 <option value="2" >2&nbsp;&#x272F;&#x272F;</option>
-													 <option value="3" >3&nbsp;&#x272F;&#x272F;&#x272F;</option>
-													 <option value="4" >4&nbsp;&#x272F;&#x272F;&#x272F;&#x272F;</option>
-													 <option value="5" >5&nbsp;&#x272F;&#x272F;&#x272F;&#x272F;&#x272F;</option>
-												</select>
-											</div>
-											<div class="form-group col-xs-12 col-sm-4">
-												<label for="total-room">Total number of room:</label>
-												<input type="text" id="total-room" class="form-control" name="total_room" value="1">
+											<div class="form-group col-sm-6">
+												<label for="num-extra-bed">Max number of extra beds:</label>
+												<input type="text" id="num-extra-bed" class="form-control" name="num_extra_bed" value="">
 											</div>
 										</div> <!-- /row -->
 										<div class="row">
-											<div class="form-group col-xs-12 col-sm-6">
-												<label for="website-url">Property website (optional):</label>
-												<input type="text" id="website-url" class="form-control" name="website_url">
+											<div class="form-group col-sm-6">
+												<label for="num-guest">Enter the number of guests that can sleep here:</label>
+												<input type="text" id="num-guest" class="form-control" name="num_guest" value="">
+											</div>
+											<div class="form-group col-sm-6">
+												<label for="room-price-x-person">Price for 1 person:</label>
+												<div class="input-group">
+													<div class="input-group-addon">US$/per nigh</div>
+													<input type="text" class="form-control" id="room-price-x-person" name="internet_price" placeholder="Amount">
+												</div>
 											</div>
 										</div> <!-- /row -->
 									</fieldset>
 
-									<fieldset id="address-section">
-										<legend>Property Address</legend>
-										<div class="row">
-											<div class="col-xs-12 col-sm-6">
-												<div class="form-group">
-													<label for="location-contact-name">Contact name:</label>
-													<input type="text" id="location-contact-name" class="form-control" name="location_contact_name" value="">
-												</div>
-												<div class="form-group">
-													<label for="address">Address line 1:</label>
-													<input type="text" id="address" class="form-control" name="address" value="">
-												</div>
-												<div class="form-group">
-													<label for="address-supplement">Address line 2:</label>
-													<input type="text" id="address-supplement" class="form-control" name="address_supplement" value="">
-												</div>	
-												<div class="form-group">
-													<label for="city">City:</label>
-													<input type="text" id="city" class="form-control" name="city" value="">
-												</div>
-												<div class="form-group">
-													<label for="country">Country:</label>
-													<select id="country" name="country" class="form-control">
-														<option value="">Please select</option>
-														<option value="kh">Cambodia</option>
-														<option value="fr">France</option>
-													</select>
-												</div>	
-											</div>
-
-											<div class="col-xs-12 col-sm-6">
-												<div class="form-group">
-													<label for="phone">Phone:</label>
-													<input type="text" id="phone" class="form-control" name="phone" value="">
-												</div>
-												<div class="form-group">
-													<label for="fax">Fax:</label>
-													<input type="text" id="fax" class="form-control" name="fax" value="">
-												</div>
-												<div class="form-group">
-													<label for="contact-email">Your email address:</label>
-													<input type="text" id="contact-email" class="form-control" name="contact_email" value="">
-												</div>
-												<div class="form-group">
-													<label for="contact-email-confirm">Confirm email:</label>
-													<input type="text" id="contact-email-confirm" class="form-control" name="contact_email_confirm" value="">
-												</div>
-											</div>
-										</div> <!-- /row -->
-										
-										<div id="property-map-wrap">
-										<p>This is the location we will provide guests. Click and drag the marker if you need to move it.</p>
-										<div class="property-map-canvas" data-default-location=""></div>
-										<input type="hidden" class="property-map-coordinate" name="property_map_coordinate" value="">
-										</div> <!-- /property-map-wrap -->
-									</fieldset>
+									
 									<input type="submit" id="proceed" name="proceed" value="Continue" class="btn btn-primary btn-block save-and-proceed">
-								</form> <!-- /add-general-information -->
+								</form> <!-- /add-room-detail -->
 							</div> <!-- /register-properties -->
 						</main>	
 					</div> <!-- /content-area -->
@@ -191,9 +131,9 @@
 					<aside id="sidebar" class="widget-area">
 						<div class="menunav">
 							<ul class="nav nav-pills nav-stacked">
-								<li role="presentation" class="active"><a href="add-general-information.html">General information</a></li>
+								<li role="presentation"><a href="add-general-information.html">General information</a></li>
 								<li role="presentation"><a href="add-property-detail.html">Property detail</a></li>
-								<li role="presentation"><a href="add-room-detail.html">Room detail</a></li>
+								<li role="presentation" class="active"><a href="add-room-detail.html">Room detail</a></li>
 								<li role="presentation"><a href="add-room-facilities.html">Room facilities</a></li>
 								<li role="presentation"><a href="add-property-photos.html">Property photos</a></li>
 								<li role="presentation"><a href="set-payment-poclicies.html">Payment and policies</a></li>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>General Information - Cotafer extranet</title>
+	<title>Agreement - Cotafer extranet</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -84,106 +84,71 @@
 					<div id="primary" class="content-area">
 						<main id="main" class="site-main" role="main">
 							<div class="register-properties">
-								<form class="add-general-information" action="add-property-detail.html">
+								<form class="agreement" action="preview-property.html">
 													
-							        <!-- General Information -->
-									<fieldset id="basic-info">
-										<legend>Basic information</legend>
-										<div class="form-group">
-											<label for="property-name">Property name:</label>
-											<input type="text" id="property-name" class="form-control" name="property_name" value="Mekong River Hotel">
-										</div>
-										<div class="row">
-											<div class="form-group col-xs-12 col-sm-4">
-												<label for="accommodation-type">Accommodation type:</label>
-												<select id="accommodation-type" name="accommodation_type" class="form-control">
-													<option value="">Please select</option>
-													<option value="1">Hotel</option>
-													<option value="2">Home Stay</option>
-												</select>
+							        <!-- Agreement -->
+									<fieldset>
+										<legend><h3>Your Accommodation Agreement with Cotafer.com</h3></legend>
+										<div class="agreement-header row">
+											<div class="party-cfr col-md-6">
+												<h4>Between:</h4>
+												<p><span class="party-name">Cotafer.com</span><br>
+												#134s, St.51 (Pasture Street), <br>
+												Sankat Boeung Keng Kang I, <br>
+												Khan Chamkarmon, <br>
+												Phnom Penh, Cambodia
+												</p>
+												<p>Commercial Register with the Ministry of Commerce and Industries Amsterdam, File number: 31047344, VAT number: NL805734958B01, Registration number Khmer Data Protection Authority: 1288246.</p>
 											</div>
-											<div class="form-group col-xs-12 col-sm-4">
-												<label for="starts">Star rating:</label>
-												<select id="starts" name="starts" class="form-control">
-													<option value="0">N/A</option>
-													 <option value="1" >1&nbsp;&#x272F;</option>
-													 <option value="2" >2&nbsp;&#x272F;&#x272F;</option>
-													 <option value="3" >3&nbsp;&#x272F;&#x272F;&#x272F;</option>
-													 <option value="4" >4&nbsp;&#x272F;&#x272F;&#x272F;&#x272F;</option>
-													 <option value="5" >5&nbsp;&#x272F;&#x272F;&#x272F;&#x272F;&#x272F;</option>
-												</select>
+											<div class="party-guest col-md-6">
+												<h4>And You, The Accommodation</h4>
+												<p><span class="party-name">Hotel name will goes here...</span><br>
+												Address: <br>
+												Street 2004, Porsen Chey, Phnom Penh, Cambodia
+												</p>
 											</div>
-											<div class="form-group col-xs-12 col-sm-4">
-												<label for="total-room">Total number of room:</label>
-												<input type="text" id="total-room" class="form-control" name="total_room" value="1">
-											</div>
-										</div> <!-- /row -->
-										<div class="row">
-											<div class="form-group col-xs-12 col-sm-6">
-												<label for="website-url">Property website (optional):</label>
-												<input type="text" id="website-url" class="form-control" name="website_url">
-											</div>
-										</div> <!-- /row -->
-									</fieldset>
+										</div> <!-- /agreement-header -->
 
-									<fieldset id="address-section">
-										<legend>Property Address</legend>
-										<div class="row">
-											<div class="col-xs-12 col-sm-6">
-												<div class="form-group">
-													<label for="location-contact-name">Contact name:</label>
-													<input type="text" id="location-contact-name" class="form-control" name="location_contact_name" value="">
-												</div>
-												<div class="form-group">
-													<label for="address">Address line 1:</label>
-													<input type="text" id="address" class="form-control" name="address" value="">
-												</div>
-												<div class="form-group">
-													<label for="address-supplement">Address line 2:</label>
-													<input type="text" id="address-supplement" class="form-control" name="address_supplement" value="">
-												</div>	
-												<div class="form-group">
-													<label for="city">City:</label>
-													<input type="text" id="city" class="form-control" name="city" value="">
-												</div>
-												<div class="form-group">
-													<label for="country">Country:</label>
-													<select id="country" name="country" class="form-control">
-														<option value="">Please select</option>
-														<option value="kh">Cambodia</option>
-														<option value="fr">France</option>
-													</select>
-												</div>	
-											</div>
+										<div class="agreement-content">
+											<h3>Have agreed as follows:</h3>
+											<ol>
+											    <li>
+											        <h4>Commission percentage</h4>           
+											        The commission percentage shall be 15%
+											    </li>
+											    <li>
+											        <h4>Execution and performance</h4>
+											        The Agreement is only effective after approval and confirmation by Booking.com B.V.
+											    </li>
+											    <li>
+											        <h4>General delivery terms</h4>
+											        This Agreement is subject to and governed by the General Delivery Terms (the "Terms and Conditions"). The Accommodation declares that it has read and hereby accepts the terms and conditions. 
+											    </li>
+											    <li>
+											        <h4>Date</h4>
+											        Jul 23, 2016 <small>(registed date)</small>
+											    </li>
+											</ol>
+										</div> <!-- /agreement-content -->
 
-											<div class="col-xs-12 col-sm-6">
-												<div class="form-group">
-													<label for="phone">Phone:</label>
-													<input type="text" id="phone" class="form-control" name="phone" value="">
-												</div>
-												<div class="form-group">
-													<label for="fax">Fax:</label>
-													<input type="text" id="fax" class="form-control" name="fax" value="">
-												</div>
-												<div class="form-group">
-													<label for="contact-email">Your email address:</label>
-													<input type="text" id="contact-email" class="form-control" name="contact_email" value="">
-												</div>
-												<div class="form-group">
-													<label for="contact-email-confirm">Confirm email:</label>
-													<input type="text" id="contact-email-confirm" class="form-control" name="contact_email_confirm" value="">
-												</div>
-											</div>
-										</div> <!-- /row -->
+										<div class="certify-agreement">
+											<h4>Please check both boxes below:</h4>
+											<div class="form-group checkbox">
+												<label>
+					                                <input type="checkbox" name="certified_legality" id="certified-legality" value="1">
+					                                I certify that this is a legitimate accommodation business with all necessary licenses and permits, which can be shown upon first request. Cotafer.com reserves the right to verify and investigate any details provided in this registration.
+					                            </label>
+					                            <label>
+					                                <input type="checkbox" name="term_condition" id="term-condition" value="1">
+					                                I have read, accepted and agreed to the <a target="_blank" href="term-condition.html" data-toggle="modal" data-target="#term-condition-modal"><span>terms and conditions</span></a>.
+					                            </label>
+					                        </div>
+										</div> <!-- /certify-agreement -->
 										
-										<div id="property-map-wrap">
-										<p>This is the location we will provide guests. Click and drag the marker if you need to move it.</p>
-										<div class="property-map-canvas" data-default-location=""></div>
-										<input type="hidden" class="property-map-coordinate" name="property_map_coordinate" value="">
-										</div> <!-- /property-map-wrap -->
 									</fieldset>
+
 									<input type="submit" id="proceed" name="proceed" value="Continue" class="btn btn-primary btn-block save-and-proceed">
-								</form> <!-- /add-general-information -->
+								</form> <!-- /add-room-facilities -->
 							</div> <!-- /register-properties -->
 						</main>	
 					</div> <!-- /content-area -->
@@ -191,13 +156,13 @@
 					<aside id="sidebar" class="widget-area">
 						<div class="menunav">
 							<ul class="nav nav-pills nav-stacked">
-								<li role="presentation" class="active"><a href="add-general-information.html">General information</a></li>
+								<li role="presentation"><a href="add-general-information.html">General information</a></li>
 								<li role="presentation"><a href="add-property-detail.html">Property detail</a></li>
 								<li role="presentation"><a href="add-room-detail.html">Room detail</a></li>
 								<li role="presentation"><a href="add-room-facilities.html">Room facilities</a></li>
 								<li role="presentation"><a href="add-property-photos.html">Property photos</a></li>
 								<li role="presentation"><a href="set-payment-poclicies.html">Payment and policies</a></li>
-								<li role="presentation"><a href="set-agreement.html">Agreement</a></li>
+								<li role="presentation" class="active"><a href="set-agreement.html">Agreement</a></li>
 								<li role="presentation"><a href="preview-property.html">Submit for review</a></li>
 							</ul>
 						</div>
@@ -222,11 +187,22 @@
 	    </div> <!-- /wrap -->
     </div> <!-- /page -->
 
+    <div id="term-condition-modal" class="modal fade">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	        <iframe id="term-iframe" src="term-condition.html" width="99.6%" height="420" frameborder="0"></iframe>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
     <script src="js/vendors/jquery-2.2.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/vendors/bootstrap.min.js"></script>
-    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="js/map.js"></script>
 
 </body>
 </html>

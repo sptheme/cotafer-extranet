@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Payment and Policy - Cotafer extranet</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendors/html5shiv.min.js"></script>
+      <script src="js/vendors/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="has-sidebar left-sidebar">
+	<div id="page" class="site">
+		<div id="wrap">
+
+			<header id="header" class="site-header">
+				<div id="site-header-inner" class="container-fluid">
+					<div id="logo" class="site-branding pull-left">
+						<a href="register.html" title="Cotafer"><img src="images/logo.png" alt="Cotafer"></a>
+					</div> <!-- /logo -->
+					<div id="header-setting" class="pull-right">
+						<div class="language">
+							<form id="langSelector" action="" class="form-horizontal">
+								<div class="form-group">
+								<label for="lang">Language:</label>
+							    <select name="lang" id="lang">
+							    	<option value="en" selected="selected">English (US)</option>
+							        <option value="ca">Català</option>
+							        <option value="cs">Čeština</option>
+							        <option value="da">Dansk</option>
+							        <option value="de">Deutsch</option>
+							        <option value="el">Ελληνικά</option>
+							        <option value="es">Español</option>
+							        <option value="et">Eesti</option>
+							        <option value="fi">Suomi</option>
+							        <option value="fr">Français</option>
+							        <option value="he">עברית</option>
+							        <option value="hr">Hrvatski</option>
+							        <option value="hu">Magyar</option>
+							        <option value="id">Bahasa Indonesia</option>
+							        <option value="is">Íslenska</option>
+							        <option value="it">Italiano</option>
+							        <option value="ja">日本語</option>
+							        <option value="ko">한국어</option>
+							        <option value="lt">Lietuvių</option>
+							        <option value="lv">Latviski</option>
+							        <option value="ms">Bahasa Malaysia</option>
+							        <option value="nl">Nederlands</option>
+							        <option value="no">Norsk</option>
+							        <option value="pl">Polski</option>
+							        <option value="xb">Português (BR)</option>
+							        <option value="pt">Português</option>
+							        <option value="ro">Română</option>
+							        <option value="ru">Русский</option>
+							        <option value="sk">Slovenčina</option>
+							        <option value="sl">Slovenščina</option>
+							        <option value="sr">Srpski</option>
+							        <option value="sv">Svenska</option>
+							        <option value="th">ภาษาไทย</option>
+							        <option value="tl">Filipino</option>
+							        <option value="tr">Türkçe</option>
+							        <option value="uk">Українська</option>
+							        <option value="vi">Tiếng Việt</option>
+							        <option value="zh">简体中文</option>
+							        <option value="xt">繁體中文</option>
+							    </select>
+							    </div>
+							</form>
+						</div> <!-- /language -->
+					</div>
+				</div> <!-- /site-header-inner -->
+			</header><!-- /header -->
+
+			<div id="content" class="site-content">
+
+				<div id="content-wrap" class="container">
+					<div id="primary" class="content-area">
+						<main id="main" class="site-main" role="main">
+							<div class="register-properties">
+								<form class="payment-policy" action="set-agreement.html">
+													
+							        <!-- Payment and Policy -->
+									<fieldset>
+										<legend>Taxes</legend>
+										<div class="fieldset-desc">
+											<p>Set your local VAT or city tax so guests know what's included in the price of their stay.</p>
+										</div>
+										
+										<div class="tax-included-excluded">
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="tax_included"> VAT/Tax settings</label>
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">%</div>
+														<input type="text" class="form-control" id="vat-amount" name="vat_amount">
+													</div>
+												</div>
+											</div> <!-- /row -->
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="city_tax_included"> City tax
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">%</div>
+														<input type="text" class="form-control" id="city-tax-amount" name="city_tax_amount">
+													</div>
+												</div>
+											</div> <!-- /row -->
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="service_charge_included"> Service charge</label>
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">%</div>
+														<input type="text" class="form-control" id="service-charge-amount" name="service_charge_amount">
+													</div>
+												</div>
+											</div> <!-- /row -->	
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<div class="checkbox">
+														<label><input type="checkbox" name="acc_tax_included"> Accommodation Tax</label>
+													</div>
+												</div>
+												<div class="form-group col-sm-6">
+													<div class="input-group">
+														<div class="input-group-addon">%</div>
+														<input type="text" class="form-control" id="acc-tax-included" name="acc_tax_amount">
+													</div>
+												</div>
+											</div> <!-- /row -->
+										</div> <!-- /extra-bed-guest-allowed -->
+										
+									</fieldset>
+
+									<fieldset>
+										<legend>Guest payment options</legend>
+										<div class="fieldset-desc">
+											<p>We allow guests to guarantee their reservation through Cotafer.com with major credit cards. However, you can specify the payment methods you accept at your property as payment for the stay.</p>
+										</div>
+
+										<div id="cc-accepted">
+											<div class="form-group">
+												<label>Do you accept credit or debit cards at your property?</label>
+												<div class="row">
+													<div class="radio-block col-sm-5">
+														<div class="radio">
+															<label>
+																<input type="radio" name="cc_accepted" value="yes">
+																<span>Yes</span>
+															</label>
+															<div class="radio">
+																<label>
+																	<input type="radio" name="cc_accepted" value="no" checked="">
+																	<span>No</span>
+																</label>
+															</div>
+													    </div>
+												    </div><!-- /radio-block -->
+												    <span id="cash-section" class="cc-desc col-sm-7">We will inform guests that you only accept cash.</span>
+											    </div>
+											</div> 
+										</div> <!-- /cc-accepted -->
+
+									    <div id="creditcard-items" class="row">
+											
+											<ul class="col-md-6">
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> American Express</label>
+										            </div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> Euro/Mastercard</label>
+										            </div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> JCB</label>
+									            	</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> Discover</label>
+									            	</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> UnionPay credit card</label>
+									            	</div>
+												</li>
+											</ul>
+											<ul class="col-md-6">
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> Visa</label>
+										            </div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> Diners Club</label>
+										            </div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> Maestro</label>
+										            </div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label><input type="checkbox"> UnionPay debit card</label>
+										            </div>
+												</li>
+											</ul>
+										</div> <!-- /creditcard-items -->
+										
+
+									</fieldset>
+
+									<input type="submit" id="proceed" name="proceed" value="Continue" class="btn btn-primary btn-block save-and-proceed">
+								</form> <!-- /payment-policy -->
+							</div> <!-- /register-properties -->
+						</main>	
+					</div> <!-- /content-area -->
+
+					<aside id="sidebar" class="widget-area">
+						<div class="menunav">
+							<ul class="nav nav-pills nav-stacked">
+								<li role="presentation"><a href="add-general-information.html">General information</a></li>
+								<li role="presentation"><a href="add-property-detail.html">Property detail</a></li>
+								<li role="presentation"><a href="add-room-detail.html">Room detail</a></li>
+								<li role="presentation"><a href="add-room-facilities.html">Room facilities</a></li>
+								<li role="presentation"><a href="add-property-photos.html">Property photos</a></li>
+								<li role="presentation" class="active"><a href="set-payment-poclicies.html">Payment and policies</a></li>
+								<li role="presentation"><a href="set-agreement.html">Agreement</a></li>
+								<li role="presentation"><a href="preview-property.html">Submit for review</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div> <!-- /container -->
+	    	</div> <!-- /content -->
+
+	    	<footer id="colophon" class="site-footer" role="contentinfo">
+	    		<div class="container-fluid">
+	    			<div class="copyright pull-left">Copyright 2016 <a href="#">Cotafer.</a> - All Rights Reserved.</div>
+	    			<div class="footer-nav pull-right">
+	    				<ul>
+	    					<li><a href="#">Home</a></li>
+	    					<li><a href="#">About us</a></li>
+	    					<li><a href="#">FAQs</a></li>
+	    					<li><a href="#">Contact us</a></li>
+	    				</ul>
+	    			</div> 
+	    		</div> <!-- /container-fluid -->
+	    	</footer> <!-- /site-footer -->
+
+	    </div> <!-- /wrap -->
+    </div> <!-- /page -->
+
+    <script src="js/vendors/jquery-2.2.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendors/bootstrap.min.js"></script>
+
+</body>
+</html>
