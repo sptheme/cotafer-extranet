@@ -1,0 +1,253 @@
+/*!
+ * COTAFER 
+ * Version: 1.0.0
+ */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Main Layout
+# Header
+# Footer
+# Content
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+html {
+	font-size: 62.5%; /* 10px browser default */
+}
+
+body {
+	font-size: 1.4em;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.6;
+	background: #f5f8fa;
+	color: #333;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*--------------------------------------------------------------
+# Main Layout
+--------------------------------------------------------------*/
+#page { overflow: hidden }
+#wrap { position: relative; }
+
+.content-area { 
+	width: 69%; 
+	float: left; 
+	position: relative; 
+}
+.widget-area { width: 26%; float: right; }
+
+/* Layout & Widths > Left Sidebar */
+body.left-sidebar #content-wrap .content-area,
+.left-sidebar .content-area { float: right }
+body.left-sidebar #content-wrap .widget-area,
+.left-sidebar .widget-area { float: left }
+
+/* Layout & Widths > Full-Width & Full-Screen */
+body.full-screen #content-wrap,
+.full-screen { width: 100% !important; max-width: none !important; }
+body.full-width #content-wrap .content-area,
+.full-width .content-area,
+body.full-screen #content-wrap { width: 100% !important; max-width: none !important; }
+body.full-screen #content-wrap .content-area,
+.full-screen .content-area { float: none; padding: 0; width: 100% !important; max-width: none !important; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	min-height: 50px;
+    height: 50px;
+    background: #ffffff;
+    padding-left: 30px;
+}
+.site-branding img {
+	margin-top: 15px;
+    float: left;
+    width: 150px;
+}
+
+#header-setting .login {
+	display: inline-block;
+    padding: 13px 14px 0 8px;
+    font-size: 0.9em;
+}
+#header-setting .login .btn {
+    margin-top: -3px;
+    font-size: 1em;
+    margin-left: 8px;
+}
+#header-setting .language {
+	display: inline-block;
+	font-size: 0.9em;
+	margin-right: 1.429em;
+}
+#header-setting .language form {
+	display: inline;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+	background: #333; 
+	color: #999; 
+	font-size: 0.9em;
+	padding: 2em 0;
+}
+
+/* Footer > Typography */
+.site-footer p { color: #777 }
+.site-footer a,
+.site-footer strong { color: #999 }
+.site-footer a:hover { 
+	color: #fff; 
+	text-decoration: none; 
+}
+
+/* Footer > Copyright */
+.copyright p:last-child { margin: 0 }
+
+/* Footer > Social */
+.footer-nav ul { 
+	list-style: none; 
+	margin: 0; 
+}
+.footer-nav ul li { 
+	float: left; 
+	margin-left: 1.429em; 
+}
+.footer-nav ul li:first-child { margin-left: 0 }
+.footer-nav ul li .fa { margin-right: 7px }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.content-area form {
+	margin-bottom: 2.143em;
+}
+
+/*--------------------------------------------------------------
+# Login and reset password
+--------------------------------------------------------------*/
+.authtictn-form {
+    margin: 0 auto;
+    float: none;
+}
+
+.form-container {
+	background: #fff;
+    margin-top: 4.286em;
+    border: 1px solid #d4dae1;
+    margin-bottom: 2.143em;
+    border-radius: 3px;
+}
+.form-container h3 {
+	margin-bottom: 1.429em;
+	padding: 0 2.857em;
+}
+
+.form-container form {
+	padding: 0 2.857em;
+	display: block;
+}
+
+.subchck label {
+	font-size: 0.9em;
+	font-weight: 400;
+}
+
+/* Login */
+.form-container .btn {
+	display: block;
+	width: 100%;
+}
+
+.form-container .new-extranet-container {
+	color: #8899a6;
+	background: #f4f4f4;
+	margin-top: 1.786em;
+    border-top: 1px solid #d4dae1;
+    padding: 0.714em;
+}
+
+/* Login > security info */
+.security-info {
+	margin: 2.143em 0 4.286em; 
+	padding: 1.071em 0 2.143em;
+	color:#fff;
+	background: #55acee;
+}
+
+.security-info a:hover {
+	text-decoration: underline;
+}
+
+.security-info dl {
+    padding: 0 2.857em;
+    margin-bottom: 0;
+}
+ .security-info dt {
+ 	margin-bottom: 1.071em;
+ }
+
+/*--------------------------------------------------------------
+# Register
+--------------------------------------------------------------*/
+/*@media (min-width: 992px) {
+	.new-register-form {
+	    float: right;
+	}	
+}*/
+
+.new-register-desc {
+	margin-top: 4.286em;
+	padding: 1.429em 0;
+}
+.new-register-desc h3,
+.new-register-form h2 {
+	margin-bottom: 30px;
+}
+
+/* Add properties detail */
+.register-properties fieldset {
+	border: none;
+    border-bottom: 1px solid #DBE0E5;
+    border-radius: 4px;
+    margin-top: 1.429em;
+    padding: 14px;
+    padding-bottom: 7px;
+    background:#fff;
+}
+
+.register-properties legend {
+	border-bottom: none;
+	display: block;
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.register-properties label {
+	font-weight: normal;
+}
+
+.register-properties input[type="submit"] {
+	margin-top: 1.429em;
+}
+
+.register-properties ul {
+	list-style: none;
+}
+.property-map-canvas {
+	width: 100%;
+	height: 480px;
+}

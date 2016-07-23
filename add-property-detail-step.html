@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Add Property Detail - Cotafer extranet</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/jquery.steps.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendors/html5shiv.min.js"></script>
+      <script src="js/vendors/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="cfr-add-property-detail full-screen">
+	<div id="page" class="site">
+		<div id="wrap">
+
+			<header id="header" class="site-header">
+				<div id="site-header-inner" class="container-fluid">
+					<div id="logo" class="site-branding pull-left">
+						<a href="index.html" title="Cotafer"><img src="images/logo.png" alt="Cotafer"></a>
+					</div> <!-- /logo -->
+					<div id="header-setting" class="pull-right">
+						<div class="language">
+							<form id="langSelector" action="" class="form-horizontal">
+								<div class="form-group">
+								<label for="lang">Language:</label>
+							    <select name="lang" id="lang">
+							    	<option value="en" selected="selected">English (US)</option>
+							        <option value="ca">Català</option>
+							        <option value="cs">Čeština</option>
+							        <option value="da">Dansk</option>
+							        <option value="de">Deutsch</option>
+							        <option value="el">Ελληνικά</option>
+							        <option value="es">Español</option>
+							        <option value="et">Eesti</option>
+							        <option value="fi">Suomi</option>
+							        <option value="fr">Français</option>
+							        <option value="he">עברית</option>
+							        <option value="hr">Hrvatski</option>
+							        <option value="hu">Magyar</option>
+							        <option value="id">Bahasa Indonesia</option>
+							        <option value="is">Íslenska</option>
+							        <option value="it">Italiano</option>
+							        <option value="ja">日本語</option>
+							        <option value="ko">한국어</option>
+							        <option value="lt">Lietuvių</option>
+							        <option value="lv">Latviski</option>
+							        <option value="ms">Bahasa Malaysia</option>
+							        <option value="nl">Nederlands</option>
+							        <option value="no">Norsk</option>
+							        <option value="pl">Polski</option>
+							        <option value="xb">Português (BR)</option>
+							        <option value="pt">Português</option>
+							        <option value="ro">Română</option>
+							        <option value="ru">Русский</option>
+							        <option value="sk">Slovenčina</option>
+							        <option value="sl">Slovenščina</option>
+							        <option value="sr">Srpski</option>
+							        <option value="sv">Svenska</option>
+							        <option value="th">ภาษาไทย</option>
+							        <option value="tl">Filipino</option>
+							        <option value="tr">Türkçe</option>
+							        <option value="uk">Українська</option>
+							        <option value="vi">Tiếng Việt</option>
+							        <option value="zh">简体中文</option>
+							        <option value="xt">繁體中文</option>
+							    </select>
+							    </div>
+							</form>
+						</div> <!-- /language -->
+					</div>
+				</div> <!-- /site-header-inner -->
+			</header><!-- /header -->
+
+			<div id="content" class="site-content">
+
+				<div id="content-wrap" class="container">
+					<form class="add-property-detail">
+
+						<div id="register-detail-wizard">
+						    <h3>General Information</h3>
+						    <section>
+						        <!-- General Information -->
+								<fieldset id="basic-info">
+									<legend>Basic information</legend>
+									<div class="form-group">
+										<label for="property-name">Property name:</label>
+										<input type="text" id="property-name" class="form-control" name="property_name" value="Mekong River Hotel">
+									</div>
+									<div class="row">
+										<div class="form-group col-xs-12 col-sm-4">
+											<label for="accommodation-type">Accommodation type:</label>
+											<select id="accommodation-type" name="accommodation_type" class="form-control">
+												<option value="">Please select</option>
+												<option value="1">Hotel</option>
+												<option value="2">Home Stay</option>
+											</select>
+										</div>
+										<div class="form-group col-xs-12 col-sm-4">
+											<label for="starts">Star rating:</label>
+											<select id="starts" name="starts" class="form-control">
+												<option value="0">N/A</option>
+												 <option value="1" >1&nbsp;&#x272F;</option>
+												 <option value="2" >2&nbsp;&#x272F;&#x272F;</option>
+												 <option value="3" >3&nbsp;&#x272F;&#x272F;&#x272F;</option>
+												 <option value="4" >4&nbsp;&#x272F;&#x272F;&#x272F;&#x272F;</option>
+												 <option value="5" >5&nbsp;&#x272F;&#x272F;&#x272F;&#x272F;&#x272F;</option>
+											</select>
+										</div>
+										<div class="form-group col-xs-12 col-sm-4">
+											<label for="total-room">Total number of room:</label>
+											<input type="text" id="total-room" class="form-control" name="total_room" value="1">
+										</div>
+									</div> <!-- /row -->
+									<div class="row">
+										<div class="form-group col-xs-12 col-sm-6">
+											<label for="website-url">Property website (optional):</label>
+											<input type="text" id="website-url" class="form-control" name="website_url">
+										</div>
+									</div> <!-- /row -->
+								</fieldset>
+
+								<fieldset id="address-section">
+									<legend>Property Address</legend>
+									<div class="row">
+										<div class="col-xs-12 col-sm-6">
+											<div class="form-group">
+												<label for="location-contact-name">Contact name:</label>
+												<input type="text" id="location-contact-name" class="form-control" name="location_contact_name" value="">
+											</div>
+											<div class="form-group">
+												<label for="address">Address line 1:</label>
+												<input type="text" id="address" class="form-control" name="address" value="">
+											</div>
+											<div class="form-group">
+												<label for="address-supplement">Address line 2:</label>
+												<input type="text" id="address-supplement" class="form-control" name="address_supplement" value="">
+											</div>	
+											<div class="form-group">
+												<label for="city">City:</label>
+												<input type="text" id="city" class="form-control" name="city" value="">
+											</div>
+											<div class="form-group">
+												<label for="country">Country:</label>
+												<select id="country" name="country" class="form-control">
+													<option value="">Please select</option>
+													<option value="kh">Cambodia</option>
+													<option value="fr">France</option>
+												</select>
+											</div>	
+										</div>
+
+										<div class="col-xs-12 col-sm-6">
+											<div class="form-group">
+												<label for="phone">Phone:</label>
+												<input type="text" id="phone" class="form-control" name="phone" value="">
+											</div>
+											<div class="form-group">
+												<label for="fax">Fax:</label>
+												<input type="text" id="fax" class="form-control" name="fax" value="">
+											</div>
+											<div class="form-group">
+												<label for="contact-email">Your email address:</label>
+												<input type="text" id="contact-email" class="form-control" name="contact_email" value="">
+											</div>
+											<div class="form-group">
+												<label for="contact-email-confirm">Confirm email:</label>
+												<input type="text" id="contact-email-confirm" class="form-control" name="contact_email_confirm" value="">
+											</div>
+										</div>
+									</div> <!-- /row -->
+									<h4>Map will goes here</h4>
+									<p>This is the location we will provide guests. Click and drag the marker if you need to move it.</p>
+								</fieldset>
+						    </section> <!-- /general information -->
+
+						    <h3>Effects</h3>
+						    <section>
+						        <div id="reservation-section" class="row">
+									<div id="checkin" class="col-md-6">
+										<fieldset>
+											<legend>Check-in</legend>
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<label for="checkin-start">from</label>
+													<select class="form-control" id="checkin-start" name="checkin_start">
+													    <option value="">Please select</option>
+													    <option value="07:00" selected="selected">7:00&nbsp;AM</option>
+													    <option value="07:30">7:30&nbsp;AM</option>
+													    <option value="08:00">8:00&nbsp;AM</option>
+													    <option value="08:30">8:30&nbsp;AM</option>
+													    <option value="09:00">9:00&nbsp;AM</option>
+													    <option value="09:30">9:30&nbsp;AM</option>
+													    <option value="10:00">10:00&nbsp;AM</option>
+													    <option value="10:30">10:30&nbsp;AM</option>
+													    <option value="11:00">11:00&nbsp;AM</option>
+													    <option value="11:30">11:30&nbsp;AM</option>
+													    <option value="12:00">12:00&nbsp;PM</option>
+													    <option value="12:30">12:30&nbsp;PM</option>
+													    <option value="13:00">1:00&nbsp;PM</option>
+													    <option value="13:30">1:30&nbsp;PM</option>
+													    <option value="14:00">2:00&nbsp;PM</option>
+													    <option value="14:30">2:30&nbsp;PM</option>
+													    <option value="15:00">3:00&nbsp;PM</option>
+													    <option value="15:30">3:30&nbsp;PM</option>
+													    <option value="16:00">4:00&nbsp;PM</option>
+													    <option value="16:30">4:30&nbsp;PM</option>
+													    <option value="17:00">5:00&nbsp;PM</option>
+													    <option value="17:30">5:30&nbsp;PM</option>
+													    <option value="18:00">6:00&nbsp;PM</option>
+													    <option value="18:30">6:30&nbsp;PM</option>
+													    <option value="19:00">7:00&nbsp;PM</option>
+													    <option value="19:30">7:30&nbsp;PM</option>
+													    <option value="20:00">8:00&nbsp;PM</option>
+													</select>
+												</div>
+												<div class="form-group col-sm-6">
+													<label for="checkin-end">to (optional)</label>
+													<select class="form-control" id="checkin-end" name="checkin_end">
+													    <option value="">Please select</option>
+													    <option value="12:00" selected="selected">12:00&nbsp;PM</option>
+													    <option value="12:30">12:30&nbsp;PM</option>
+													    <option value="13:00">1:00&nbsp;PM</option>
+													    <option value="13:30">1:30&nbsp;PM</option>
+													    <option value="14:00">2:00&nbsp;PM</option>
+													    <option value="14:30">2:30&nbsp;PM</option>
+													    <option value="15:00">3:00&nbsp;PM</option>
+													    <option value="15:30">3:30&nbsp;PM</option>
+													    <option value="16:00">4:00&nbsp;PM</option>
+													    <option value="16:30">4:30&nbsp;PM</option>
+													    <option value="17:00">5:00&nbsp;PM</option>
+													    <option value="17:30">5:30&nbsp;PM</option>
+													    <option value="18:00">6:00&nbsp;PM</option>
+													    <option value="18:30">6:30&nbsp;PM</option>
+													    <option value="19:00">7:00&nbsp;PM</option>
+													    <option value="19:30">7:30&nbsp;PM</option>
+													    <option value="20:00">8:00&nbsp;PM</option>
+													    <option value="20:30">8:30&nbsp;PM</option>
+													    <option value="21:00">9:00&nbsp;PM</option>
+													    <option value="21:30">9:30&nbsp;PM</option>
+													    <option value="22:00">10:00&nbsp;PM</option>
+													    <option value="22:30">10:30&nbsp;PM</option>
+													    <option value="23:00">11:00&nbsp;PM</option>
+													    <option value="23:30">11:30&nbsp;PM</option>
+													    <option value="00:00">12:00&nbsp;AM</option>
+												</select>
+												</div>
+											</div> <!-- /row -->
+										</fieldset>
+									</div> <!-- /checkin --> 
+									
+									<div id="checkout" class="col-md-6">
+										<fieldset>
+											<legend>Check-out</legend>
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<label for="checkout-start">from</label>
+													<select class="form-control" id="checkout-start" name="checkout_start">
+													    <option value="">Please select</option>
+													    <option value="07:00" selected="selected">7:00&nbsp;AM</option>
+													    <option value="07:30">7:30&nbsp;AM</option>
+													    <option value="08:00">8:00&nbsp;AM</option>
+													    <option value="08:30">8:30&nbsp;AM</option>
+													    <option value="09:00">9:00&nbsp;AM</option>
+													    <option value="09:30">9:30&nbsp;AM</option>
+													    <option value="10:00">10:00&nbsp;AM</option>
+													    <option value="10:30">10:30&nbsp;AM</option>
+													    <option value="11:00">11:00&nbsp;AM</option>
+													    <option value="11:30">11:30&nbsp;AM</option>
+													    <option value="12:00">12:00&nbsp;PM</option>
+													    <option value="12:30">12:30&nbsp;PM</option>
+													    <option value="13:00">1:00&nbsp;PM</option>
+													    <option value="13:30">1:30&nbsp;PM</option>
+													    <option value="14:00">2:00&nbsp;PM</option>
+													    <option value="14:30">2:30&nbsp;PM</option>
+													    <option value="15:00">3:00&nbsp;PM</option>
+													    <option value="15:30">3:30&nbsp;PM</option>
+													    <option value="16:00">4:00&nbsp;PM</option>
+													    <option value="16:30">4:30&nbsp;PM</option>
+													    <option value="17:00">5:00&nbsp;PM</option>
+													    <option value="17:30">5:30&nbsp;PM</option>
+													    <option value="18:00">6:00&nbsp;PM</option>
+													    <option value="18:30">6:30&nbsp;PM</option>
+													    <option value="19:00">7:00&nbsp;PM</option>
+													    <option value="19:30">7:30&nbsp;PM</option>
+													    <option value="20:00">8:00&nbsp;PM</option>
+													</select>
+												</div>
+												<div class="form-group col-sm-6">
+													<label for="checkout-end">to (optional)</label>
+													<select class="form-control" id="checkout-end" name="checkout_end">
+													    <option value="">Please select</option>
+													    <option value="12:00" selected="selected">12:00&nbsp;PM</option>
+													    <option value="12:30">12:30&nbsp;PM</option>
+													    <option value="13:00">1:00&nbsp;PM</option>
+													    <option value="13:30">1:30&nbsp;PM</option>
+													    <option value="14:00">2:00&nbsp;PM</option>
+													    <option value="14:30">2:30&nbsp;PM</option>
+													    <option value="15:00">3:00&nbsp;PM</option>
+													    <option value="15:30">3:30&nbsp;PM</option>
+													    <option value="16:00">4:00&nbsp;PM</option>
+													    <option value="16:30">4:30&nbsp;PM</option>
+													    <option value="17:00">5:00&nbsp;PM</option>
+													    <option value="17:30">5:30&nbsp;PM</option>
+													    <option value="18:00">6:00&nbsp;PM</option>
+													    <option value="18:30">6:30&nbsp;PM</option>
+													    <option value="19:00">7:00&nbsp;PM</option>
+													    <option value="19:30">7:30&nbsp;PM</option>
+													    <option value="20:00">8:00&nbsp;PM</option>
+													    <option value="20:30">8:30&nbsp;PM</option>
+													    <option value="21:00">9:00&nbsp;PM</option>
+													    <option value="21:30">9:30&nbsp;PM</option>
+													    <option value="22:00">10:00&nbsp;PM</option>
+													    <option value="22:30">10:30&nbsp;PM</option>
+													    <option value="23:00">11:00&nbsp;PM</option>
+													    <option value="23:30">11:30&nbsp;PM</option>
+													    <option value="00:00">12:00&nbsp;AM</option>
+												</select>
+												</div>
+											</div> <!-- /row -->
+										</fieldset>	
+									</div> <!-- /checkout -->
+								</div> <!-- /row -->
+
+								<fieldset id="property-desc">
+									<legend>Property description</legend>
+									<div class="fieldset-desc">
+										<p>Please provide us with a brief description of your hotel.</p>
+									</div>
+									<textarea class="form-control" rows="3"></textarea>
+								</fieldset>
+
+								<fieldset id="internet">
+									<legend>Internet</legend>
+									<div class="fieldset-desc">
+										<p>Internet access is important for many travelers. Free Wi-Fi is a huge selling point, too!</p>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="internet-payment">Is internet available to guests?</label>
+											<select id="internet-payment" name="internet_payment" class="form-control">
+												<option value="">No</option>
+												<option value="free">Yes, free</option>
+												<option value="paid">Yes, paid</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="internet-area">Connection location</label>
+											<select id="internet-area" name="internet_area" class="form-control">
+												<option value="public_areas">Public areas</option>
+												<option value="some_rooms">Some rooms</option>
+												<option value="all_rooms">All rooms</option>
+												<option value="entire_property">Entire property</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="internet-price">Price for internet (in dollars)</label>
+											<div class="input-group">
+												<div class="input-group-addon">$</div>
+												<input type="text" class="form-control" id="internet-price" name="internet_price" placeholder="Amount">
+												<div class="input-group-addon">.00</div>
+											</div>
+										</div>
+									</div> <!-- /row -->
+								</fieldset>
+
+								<fieldset id="parking">
+									<legend>Parking</legend>
+									<div class="fieldset-desc">
+										<p>This information is especially important for those traveling to your property by car.</p>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="parking-available">Is parking available to guests?</label>
+											<select id="parking-available" name="parking_available" class="form-control">
+												<option value="">No</option>
+												<option value="free">Yes, free</option>
+												<option value="paid">Yes, paid</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="parking-space">Parking space</label>
+											<select id="parking-space" name="parking_space" class="form-control">
+												<option value="private">Private</option>
+												<option value="public">Public</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="parking-price">Price for parking (in dollars)</label>
+											<div class="input-group">
+												<div class="input-group-addon">$</div>
+												<input type="text" class="form-control" id="parking-price" name="internet_price" placeholder="Amount">
+												<div class="input-group-addon">.00</div>
+											</div>
+										</div>
+									</div> <!-- /row -->
+								</fieldset>
+
+								<fieldset id="breakfast">
+									<legend>Breakfast</legend>
+									<div class="fieldset-desc">
+										<p>Indicate if breakfast is included in the price, or if it's an optional add-on.</p>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="breakfast-included">Is breakfast available to guests?</label>
+											<select id="breakfast-included" name="breakfast_included" class="form-control">
+												<option value="">No</option>
+												<option value="included">Yes, it's included in the price</option>
+												<option value="optional">Yes, it's optional</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="breakfast-type">What kind of breakfast is available?</label>
+											<select id="breakfast-type" name="breakfast_type" class="form-control">
+												<option value="">Please select</option>
+												<option value="1">Continental</option>
+												<option value="2">Italian</option>
+												<option value="3">Full English/Irish</option>
+												<option value="4">Vegetarian</option>
+												<option value="5">Vegan</option>
+												<option value="6">Halal</option>
+												<option value="7">Gluten-free</option>
+												<option value="8">Kosher</option>
+												<option value="9">Asian</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4 col-sm-6">
+											<label for="breakfast-price">Price for breakfast (per person, per day in dollars)</label>
+											<div class="input-group">
+												<div class="input-group-addon">$</div>
+												<input type="text" class="form-control" id="breakfast-price" name="breakfast_price" placeholder="Amount">
+												<div class="input-group-addon">.00</div>
+											</div>
+										</div>
+									</div> <!-- /row -->
+								</fieldset>
+
+								<div class="row">
+									<div id="children-allowed" class="col-md-6">
+										<fieldset>
+											<legend>Children</legend>
+											<div class="radio-inline">
+												<label>
+													<input type="radio" name="children_allowed" value="yes" checked="">
+													<span>Yes</span>
+												</label>
+										    </div>
+										    <div class="radio-inline">
+												<label>
+													<input type="radio" name="children_allowed" value="no">
+													<span>No</span>
+												</label>
+											</div>
+										</fieldset>
+									</div>	
+									<div id="pet-allowed" class="col-md-6">
+										<fieldset>
+											<legend>Pets</legend>
+											<div class="radio-inline">
+												<label>
+													<input type="radio" name="pet_allowed" value="yes" checked="">
+													<span>Yes</span>
+												</label>
+										    </div>
+										    <div class="radio-inline">
+												<label>
+													<input type="radio" name="pet_allowed" value="no">
+													<span>No</span>
+												</label>
+											</div>
+										</fieldset>
+									</div>
+								</div> <!-- /row -->
+
+								<fieldset id="property-style">
+									<legend>Property Style</legend>
+									<div class="fieldset-desc">
+										<p>Please select the categories that apply to your property. This information will help us better target customer for you.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Adventure
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Backpacker
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Meeting/Banquet 
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Conference
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Airport
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Boutique
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Business
+							            </label>
+						            </div>
+								</fieldset> <!-- /property-style -->
+
+								<fieldset id="room-facilities">
+									<legend>Room Facilities</legend>
+									<div class="fieldset-desc">
+										<p>Please select the facilities available for your property.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Air conditioning
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Fan
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Balcony
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Private Pool
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Free Wi-Fi in the room
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> IDD Telephone
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Data port for fax/modem
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Bath robe
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Shower
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Bathtub
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Hot Water
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Hairdryer
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Shaver outlet
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Safety box
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Tea/Coffee maker
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Mini bar/refrigerator
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Alarm System
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Cable TV, satellite channels
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Mosquito net
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Mosquito cream
+							            </label>
+						            </div>
+								</fieldset> <!-- /room-facilities -->
+
+								<fieldset id="activities">
+									<legend>Sports/Activities</legend>
+									<div class="fieldset-desc">
+										<p>Please select the sports and recreating available for your property</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Snorkeling
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Mini Golf
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Pool Table 
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Ping-Pong
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Diving
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Tennis Court
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Hiking
+							            </label>
+						            </div>
+								</fieldset> <!-- /activities -->
+
+								<fieldset id="food-drink">
+									<legend>Food and Drink</legend>
+									<div class="fieldset-desc">
+										<p>Indicate which options are available on site.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Restaurant
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Restaurant with Dining Menu
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Buffet-Style Restaurant
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Bar
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Snack Bar
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Grocery Deliveries
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Packed Lunches
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> BBQ Facilities
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Room Service
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Breakfast in the Room
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Coffee shop
+							            </label>
+						            </div>
+								</fieldset> <!-- /food-drink -->
+
+								<fieldset id="food-drink">
+									<legend>Pool and Spa</legend>
+									<div class="fieldset-desc">
+										<p>Indicate which seasonal and year-round facilities you provide on site.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Indoor Pool
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Outdoor Pool
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Private Beach Area
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Beachfront
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Spa
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Sauna
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Turkish/Steam Bath
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Hot Tub/Jacuzzi
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Fitness Center
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Hot Spring Bath
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Solarium
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Massage
+							            </label>
+						            </div>
+								</fieldset> <!-- /food-drink -->
+
+								<fieldset id="transportation">
+									<legend>Transportation</legend>
+									<div class="fieldset-desc">
+										<p>Indicate the transportation your property can provide or arrange for guests.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Bikes Available (free)
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Bicycle Rental
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Car Rental
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Airport Limousine service
+							            </label>
+						            </div>
+								</fieldset> <!-- /transportation -->
+
+								<fieldset id="front-desk">
+									<legend>Front desk service</legend>
+									<div class="fieldset-desc">
+										<p>Indicate the transportation your property can provide or arrange for guests.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> 24-Hour Front Desk
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Private Check-in/Check-out
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Express Check-in/Check-out
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Ticket Service
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Tour service
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Currency Exchange
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> ATM on site
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Valet Parking
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Luggage Storage
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Newspapers
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Multilingual Staff Available
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Emergency Medical service
+							            </label>
+						            </div>
+								</fieldset> <!-- /front-desk -->
+
+								<fieldset id="cleaning">
+									<legend>Cleaning services</legend>
+									<div class="checkbox">
+										<label>
+							                <input type="checkbox"> Dry Cleaning
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Ironing Service
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Laundry
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Daily Housekeeping
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Shoeshine
+							            </label>
+						            </div>
+						            <div class="checkbox">
+										<label>
+							                <input type="checkbox"> Suit Press
+							            </label>
+						            </div>
+								</fieldset> <!-- /transportation -->
+						    </section>
+						</div> <!-- /register-detail-wizard -->
+
+						
+
+						
+
+					</form> <!-- /add-property-detail -->
+				</div>
+
+	    	</div> <!-- /content -->
+
+	    	<footer id="colophon" class="site-footer" role="contentinfo">
+	    		<div class="container-fluid">
+	    			<div class="copyright pull-left">Copyright 2016 <a href="#">Cotafer.</a> - All Rights Reserved.</div>
+	    			<div class="footer-nav pull-right">
+	    				<ul>
+	    					<li><a href="#">Home</a></li>
+	    					<li><a href="#">About us</a></li>
+	    					<li><a href="#">FAQs</a></li>
+	    					<li><a href="#">Contact us</a></li>
+	    				</ul>
+	    			</div> 
+	    		</div> <!-- /container-fluid -->
+	    	</footer> <!-- /site-footer -->
+
+	    </div> <!-- /wrap -->
+    </div> <!-- /page -->
+
+    <script src="js/vendors/jquery-2.2.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendors/bootstrap.min.js"></script>
+    <script src="js/vendors/jquery.steps.min.js"></script>
+    <script src="js/admin-extranet.js"></script>
+
+</body>
+</html>

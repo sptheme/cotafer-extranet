@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Register - Cotafer extranet</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendors/html5shiv.min.js"></script>
+      <script src="js/vendors/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="cfr-register-extranet full-screen">
+	<div id="page" class="site">
+		<div id="wrap">
+
+			<header id="header" class="site-header">
+				<div id="site-header-inner" class="container-fluid">
+					<div id="logo" class="site-branding pull-left">
+						<a href="index.html" title="Cotafer"><img src="images/logo.png" alt="Cotafer"></a>
+					</div> <!-- /logo -->
+					<div id="header-setting" class="pull-right">
+						<div class="language">
+							<form id="langSelector" action="" class="form-horizontal">
+								<div class="form-group">
+								<label for="lang">Language:</label>
+							    <select name="lang" id="lang">
+							    	<option value="en" selected="selected">English (US)</option>
+							        <option value="ca">Català</option>
+							        <option value="cs">Čeština</option>
+							        <option value="da">Dansk</option>
+							        <option value="de">Deutsch</option>
+							        <option value="el">Ελληνικά</option>
+							        <option value="es">Español</option>
+							        <option value="et">Eesti</option>
+							        <option value="fi">Suomi</option>
+							        <option value="fr">Français</option>
+							        <option value="he">עברית</option>
+							        <option value="hr">Hrvatski</option>
+							        <option value="hu">Magyar</option>
+							        <option value="id">Bahasa Indonesia</option>
+							        <option value="is">Íslenska</option>
+							        <option value="it">Italiano</option>
+							        <option value="ja">日本語</option>
+							        <option value="ko">한국어</option>
+							        <option value="lt">Lietuvių</option>
+							        <option value="lv">Latviski</option>
+							        <option value="ms">Bahasa Malaysia</option>
+							        <option value="nl">Nederlands</option>
+							        <option value="no">Norsk</option>
+							        <option value="pl">Polski</option>
+							        <option value="xb">Português (BR)</option>
+							        <option value="pt">Português</option>
+							        <option value="ro">Română</option>
+							        <option value="ru">Русский</option>
+							        <option value="sk">Slovenčina</option>
+							        <option value="sl">Slovenščina</option>
+							        <option value="sr">Srpski</option>
+							        <option value="sv">Svenska</option>
+							        <option value="th">ภาษาไทย</option>
+							        <option value="tl">Filipino</option>
+							        <option value="tr">Türkçe</option>
+							        <option value="uk">Українська</option>
+							        <option value="vi">Tiếng Việt</option>
+							        <option value="zh">简体中文</option>
+							        <option value="xt">繁體中文</option>
+							    </select>
+							    </div>
+							</form>
+						</div> <!-- /language -->
+
+						<div class="login">
+							<span>Have an Cotafer partner?</span>
+							<a href="login.html" class="btn btn-success">Sign in to the Extranet</a>
+						</div> <!-- /login -->
+					</div>
+				</div> <!-- /site-header-inner -->
+			</header><!-- /header -->
+
+			<div id="content" class="site-content">
+
+				<section class="section-new-register">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 new-register-form">
+								<div class="form-container">
+									<h3 class="login-form-title text-center">Register for new property</h3>	
+									<form id="add-property" action="add-general-information.html">
+										<div class="form-group">
+											<label for="accommodation-type">Accommodation type:</label>
+											<select id="accommodation-type" name="accommodation_type" class="form-control" tabindex="1">
+												<option value="">Please select</option>
+												<option value="1">Hotel</option>
+												<option value="2">Home Stay</option>
+												option
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="property-name">Property name:</label>
+											<input type="text" id="property-name" class="form-control" name="property_name" value="" tabindex="2" placeholder="Please you property name">
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label for="first-name">First name:</label>
+												<input type="text" id="first-name" class="form-control" name="first_name" value="" tabindex="3" placeholder="Please you first name">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="last-name">Last name:</label>
+												<input type="text" id="last-name" class="form-control" name="last_name" value="" tabindex="4" placeholder="Please you last name">
+											</div>
+										</div> <!-- /row -->
+										<div class="form-group">
+											<label for="contact-email">Your email address:</label>
+											<input type="text" id="contact-email" class="form-control" name="contact_email" value="" tabindex="5" placeholder="Please you email address">
+										</div>
+										<div class="form-group">
+											<label for="contact-email-confirm">Confirm email:</label>
+											<input type="text" id="contact-email-confirm" class="form-control" name="contact_email_confirm" value="" tabindex="6" placeholder="Re-enter you email">
+										</div>
+										
+										<div class="form-group">
+											<button type="submit" class="btn btn-primary">GET STARTED</button>
+										</div>
+									</form>
+
+									<div class="new-extranet-container text-center">
+										<span>
+				                             Already have property?
+				                            <a href="login.html">Sign in now</a>
+				                        </span>
+									</div>
+								</div> <!-- /form-container -->	
+							</div> <!-- /col-md-6 -->
+							<div class="col-md-6 col-sm-12">
+								<div class="new-register-desc">
+									<h3>Why new extranet with Cotafer?</h3>
+									<ul>
+										<li>
+											<h4>World Wide Audience</h4>
+											<p>We market your property to a large audience of travelers worldwide, year-round.</p>
+										</li>
+										<li>
+											<h4>Free Registration</h4>
+											<p>There are absolutely no sign-up fees or subscription costs when you partner with us.</p>
+										</li>
+										<li>
+											<h4>24/7 Multilingual Support</h4>
+											<p>Our round-the-clock support team is here for you and your guests – in up to 40 languages.</p>
+										</li>
+									</ul>
+								</div> <!-- /new-register-desc -->
+							</div>
+						</div> <!-- /row -->
+					</div> <!-- /container -->
+				</section> <!-- /section-new-register -->
+
+				<section class="security-info">
+					<div class="container">
+						
+						<div class="row">
+						 	<div class="col-xs-12">
+						 		<h3 class="text-center">How It Works</h3>
+						 	</div>
+						</div> <!-- /row -->
+
+						<ul class="row">
+							<li class="col-sm-4">
+								<h3><i>1</i>You tell us about your property</h3>
+								<p>Add your property details, photos and payment policies during your registration. Once we confirm your details, you set your property live and can start receiving reservations immediately.</p>
+							</li>
+							<li class="col-sm-4">
+								<h3><i>2</i>We tell the world about you</h3>
+								<p>We show your property in a way that's relevant to guests around the world, in up to 41 languages. We also market your property on search engines like Google, Bing and Yahoo to help you sell more rooms and increase revenue!</p>
+							</li>
+							<li class="col-sm-4">
+								<h3><i>3</i>You get instant bookings and reviews</h3>
+								<p>All bookings made through Coterfa.com are confirmed instantly. Coterfa.com guests leave reviews of their stay which help your future guests make the decision to stay with you.</p>
+							</li>
+						</ul>
+
+					</div> <!-- /container -->
+				</section> <!-- /security-info -->
+
+	    	</div> <!-- /content -->
+
+	    	<footer id="colophon" class="site-footer" role="contentinfo">
+	    		<div class="container-fluid">
+	    			<div class="copyright pull-left">Copyright 2016 <a href="#">Cotafer.</a> - All Rights Reserved.</div>
+	    			<div class="footer-nav pull-right">
+	    				<ul>
+	    					<li><a href="#">Home</a></li>
+	    					<li><a href="#">About us</a></li>
+	    					<li><a href="#">FAQs</a></li>
+	    					<li><a href="#">Contact us</a></li>
+	    				</ul>
+	    			</div> 
+	    		</div> <!-- /container-fluid -->
+	    	</footer> <!-- /site-footer -->
+
+	    </div> <!-- /wrap -->
+    </div> <!-- /page -->
+
+    <script src="js/vendors/jquery-2.2.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendors/bootstrap.min.js"></script>
+
+</body>
+</html>
